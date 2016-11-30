@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>J M A C</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="/static/img/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <!-- Bootstrap core CSS -->
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+       <!-- Custom styles for this template -->
+        <link href="/static/css/blog.css" rel="stylesheet">
+
+        <!-- Optional theme -->
+        {#    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">#}
+    </head>
+    <body>
+
+        <div class="blog-masthead">
+            <div class="container">
+                <nav class="blog-nav">
+                    <a class="blog-nav-item active" href="/">Home</a>
+                    <a class="blog-nav-item" href="/about">About</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="blog-header">
+                <h3 class="blog-title">J M A C</h3>
+                <p class="lead blog-description">Digging is something you MUST do!</p>
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-8 blog-main">
+
+                    {% block content %}{% endblock %}
+
+                    <nav>
+                        <ul class="pager">
+                            <li><a href="#">Previous</a></li>
+                            <li><a href="#">Next</a></li>
+                        </ul>
+                    </nav>
+
+                </div><!-- /.blog-main -->
+
+                <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+                    <div class="sidebar-module sidebar-module-inset">
+                        <h4>About</h4>
+                        <p>JMac is a <em>systems and software engineer</em> with over 20 years of picking up the shovel and digging.</p>
+                    </div>
+                    <div class="sidebar-module">
+                        <h4>Archives</h4>
+                        <ol class="list-unstyled">
+                            <li><a href="#">Nov 2016</a></li>
+                        </ol>
+                    </div>
+                    <div class="sidebar-module">
+                        <h4>Connect</h4>
+                        <ol class="list-unstyled">
+                            <li><a href="#">GitHub</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Facebook</a></li>
+                        </ol>
+                    </div>
+                    <div class="sidebar-module">
+
+                    </div>
+                </div><!-- /.blog-sidebar -->
+            </div><!-- /.row -->
+        <hr>
+        <div id="footer">
+            {% block footer %}
+                &copy; Copyright 2016 by <a href="http://jmaclabs.net/">jmaclabs.net</a>
+            {% endblock %}
+        </div>
+
+        </div><!-- /.container -->
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+{#        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>#}
+        <script>window.jQuery || document.write('<script src="/static/js/jquery-3.1.1.min.js"><\/script>')</script>
+        <script src="/static/js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+{#        <script src="../static/js/ie10-viewport-bug-workaround.js"></script>#}
+    </body>
+</html>
